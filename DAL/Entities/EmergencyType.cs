@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace DAL.Entities
 {
-    internal class EmergencyType
+    public class EmergencyType
     {
+        public int Id { get; set; }
+        public string Type { get; set; }
     }
 }

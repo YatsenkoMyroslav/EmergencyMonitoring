@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace DAL.Entities
 {
-    internal class Emergency
+    public class Emergency
     {
+        public int Id { get; set; }
+        public DateOnly Date { get; set; }
+        public int StreetId { get; set; }
+        public int House { get; set; }
+        public int TypeId { get; set; }
     }
 }
