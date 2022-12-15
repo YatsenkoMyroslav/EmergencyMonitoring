@@ -1,4 +1,4 @@
-namespace DAL.Test
+namespace DLL.Tests
 {
     public class UnitTest1
     {
