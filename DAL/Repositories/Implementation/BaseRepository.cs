@@ -29,12 +29,9 @@ namespace DAL.Repositories.Implementation
             _set.Remove(item);
         }
 
-        public IEnumerable<T> Find(
-            Func<T, bool> predicate)
+        public IEnumerable<T> Find(Func<T, bool> predicate, int pageNum, int amountOnPage)
         {
-            return
-                _set.Where(predicate)
-                    .ToList();
+            return _set.Where(predicate).Skip(amountOnPage * pageNum).Take(amountOnPage).ToList();
         }
 
         public T Get(int id)
