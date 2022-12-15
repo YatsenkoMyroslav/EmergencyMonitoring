@@ -3,8 +3,8 @@ using CCL.Security;
 using CCL.Security.Identity;
 using DAL.Entities;
 using DAL.UnitOfWork;
-using DLL.DTO;
-using DLL.Services.Interfaces;
+using BLL.DTO;
+using BLL.Services.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -12,7 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DLL.Services.Implementations
+namespace BLL.Services.Implementations
 {
     public class EmergencyService:IEmergencyService
     {
